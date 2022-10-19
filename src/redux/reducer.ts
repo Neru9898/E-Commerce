@@ -30,7 +30,14 @@ const cartReducer = (state: any = initialState, action: Actions) => {
 
       return { ...state };
     case ActionTypes.DELETE_FROM_CART:
-      return state - 1;
+      state.cart = state.cart.filter((book: any) => book.id !== action.payload);
+      state.totalPrice = state.cart.reduce(
+        (previousValue: any, currentValue: any) =>
+          previousValue + currentValue.price * currentValue.quantity,
+        0
+      );
+      console.log(state);
+      return { ...state };
     default:
       return state;
   }

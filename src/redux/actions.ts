@@ -5,8 +5,9 @@ interface AddAction {
   payload: any;
 }
 
-interface RemoveAction {
+interface DeleteAction {
   type: ActionTypes.DELETE_FROM_CART;
+  payload: string;
 }
 
-export type Actions = AddAction | RemoveAction;
+export type Actions = AddAction | DeleteAction;

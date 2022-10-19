@@ -13,7 +13,7 @@ const Home = () => {
         Colleen Hoover
       </h3>
       <Link to={`/products/1`}>
-        <img src={bookData[0].imgURL} />
+        <img src={bookData[0].imgURL} alt="Temp" />
       </Link>
     </div>
   );

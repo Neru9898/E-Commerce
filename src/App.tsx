@@ -5,14 +5,8 @@ import Home from "./Pages/Home";
 import Products from "./Pages/Products";
 import Item from "./Pages/Item";
 import Cart from "./Pages/Cart";
-import { useSelector, useDispatch } from "react-redux";
-import { ActionTypes } from "./redux/ActionsTypes";
-import { addToCart } from "./redux/cartAction";
 
 function App() {
-  // const state: any = useSelector((state) => state);
-  // const dispatch = useDispatch();
-  // console.log(state);
   return (
     <div className="App">
       <Router>
@@ -28,7 +22,6 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/products" element={<Products />} />
           <Route path="/products/:bookID" element={<Item />} />
-          {/* <Route path="/:bookID" element={<Item />} /> */}
           <Route path="/cart" element={<Cart />} />
         </Routes>
       </Router>

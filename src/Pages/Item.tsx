@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { useParams } from "react-router-dom";
 import { bookData } from "../data/data";
-
 import { addToCart } from "../redux/cartAction";
 const Item = () => {
   const params = useParams();
@@ -10,7 +9,7 @@ const Item = () => {
   const currentBook: any = bookData.find(
     (data: any) => data.id === params.bookID
   );
-  const state: any = useSelector((state) => state);
+
   const [quantity, setQutatity] = useState<number>(1);
   return (
     <div>
