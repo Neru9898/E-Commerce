@@ -8,16 +8,23 @@ import Cart from "./Pages/Cart";
 
 function App() {
   return (
-    <div className="App">
+    <div className="min-w-[950px] h-screen border-8 border-sky-500 flex flex-col overflow-scroll">
       <Router>
-        <h1 className="text-3xl font-bold underline text-red-600">
-          Simple React Typescript Tailwind Sample
-        </h1>
-        <>
-          <Link to="/products">Products</Link>
-          <Link to="/cart">Cart</Link>
-          <Link to="/">Home</Link>
-        </>
+        <div className="w-full h-16 border">
+          <div className="px-2 flex items-center w-full h-full ">
+            <div className="flex items-center">
+              <span className="p-6 text-2xl rounded-2xl hover:bg-sky-700 transition-colors duration-300 ease-in-out">
+                <Link to="/">Home</Link>
+              </span>
+              <span className="p-6 text-2xl rounded-2xl hover:bg-sky-700 transition-colors duration-300 ease-in-out">
+                <Link to="/products">Products</Link>
+              </span>
+              <span className="p-6 text-2xl rounded-2xl hover:bg-sky-700 transition-colors duration-300 ease-in-out">
+                <Link to="/cart">Cart</Link>
+              </span>
+            </div>
+          </div>
+        </div>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/products" element={<Products />} />
