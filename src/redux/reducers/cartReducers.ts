@@ -1,5 +1,6 @@
-import { ActionTypes } from "../ActionsTypes";
-import { Actions } from "../actions";
+import { ActionTypes } from "../Actions/ActionsTypes";
+import { ActionsInterface } from "../ActionInterfaces";
+
 const initialState = {
   cart: [],
   totalPrice: 0,
@@ -7,7 +8,7 @@ const initialState = {
 
 export const getBookIndex = (array: any[], id: string) =>
   array.findIndex((currentCart: any) => currentCart.id === id);
-const cartReducer = (state: any = initialState, action: Actions) => {
+const cartReducer = (state: any = initialState, action: ActionsInterface) => {
   switch (action.type) {
     case ActionTypes.ADD_TO_CART:
       const findBookIndex = getBookIndex(state.cart, action.payload.id);

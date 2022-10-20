@@ -1,11 +1,9 @@
-import React from "react";
-import "./App.css";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Home from "./Pages/Home";
-import Products from "./Pages/Products";
-import Item from "./Pages/Item";
-import Cart from "./Pages/Cart";
-import Navbar from "./Pages/Navbar";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./Components/Home";
+import Products from "./Components/Products";
+import Item from "./Components/Item";
+import Cart from "./Components/Cart";
+import Navbar from "./Components/Navbar";
 
 function App() {
   return (

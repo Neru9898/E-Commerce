@@ -1,4 +1,4 @@
-import { ActionTypes } from "./ActionsTypes";
+import { ActionTypes } from "../Actions/ActionsTypes";
 
 interface AddAction {
   type: ActionTypes.ADD_TO_CART;
@@ -14,4 +14,5 @@ interface UpdateAction {
   type: ActionTypes.UPDATE_CART;
   payload: any;
 }
-export type Actions = AddAction | DeleteAction | UpdateAction;
+
+export type CartActionsInterface = AddAction | DeleteAction | UpdateAction;
