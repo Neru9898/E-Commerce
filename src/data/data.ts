@@ -37,7 +37,7 @@ export const bookData = [
     title: "THE ATLAS PARADOX (INDIGO EXCLUSIVE EDITION)",
     author: "Olivie Blake",
     description:
-      "The Atlas Paradox is the long-awaited sequel to Olivie Blake's New York Times bestselling dark academic sensation The Atlas Six—guaranteed to have even more yearning, backstabbing, betrayal, and chaos. Six magicians were presented with the opportunity of a lifetime. Five are now members of the Society. Two paths lay before them. All must pick a side. Alliances will be tested, hearts will be broken, and The Society of Alexandrians will be revealed for what it is: a secret society with raw, world-changing power, headed by a man whose plans to change life as we know it are already under way.",
+      "The Atlas Paradox is the long-awaited sequel to Olivie Blake's New York Times bestselling dark academic sensation The Atlas Six—guaranteed to have even more yearning, backstabbing, betrayal, and chaos. Six magicians were presented with the opportunity of a lifetime. Five are now members of the Society. Two paths lay before them. All must pick a side.",
     price: 30.0,
     imgURL: book4,
   },

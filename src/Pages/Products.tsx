@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { bookData } from "../data/data";
 const Products = () => {
   return (
-    <div className="border-8 border-sky-500 p-12">
+    <div className="p-12">
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
         {bookData.map((book: any) => {
           return (
