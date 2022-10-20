@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
-import { deleteFromCart } from "../redux/cartAction";
+import { deleteFromCart, updateCart } from "../redux/cartAction";
 const Cart = () => {
   const dispatch = useDispatch();
   const { cart, totalPrice } = useSelector((state: any) => state);
@@ -24,7 +24,15 @@ const Cart = () => {
                 Price: ${item.price.toFixed(2)}
               </span>
               <span className="text-2xl m-1">Quantity: {item.quantity}</span>
-              <span className="text-2xl m-1">
+              <input
+                type="number"
+                inputMode="numeric"
+                value={item.quantity}
+                onChange={(e) =>
+                  dispatch(updateCart(item.id, parseInt(e.target.value)))
+                }
+              />
+              <span className="text-xl m-1">
                 (Total: {(item.quantity * item.price).toFixed(2)})
               </span>
             </div>

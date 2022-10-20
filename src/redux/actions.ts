@@ -10,4 +10,8 @@ interface DeleteAction {
   payload: string;
 }
 
-export type Actions = AddAction | DeleteAction;
+interface UpdateAction {
+  type: ActionTypes.UPDATE_CART;
+  payload: any;
+}
+export type Actions = AddAction | DeleteAction | UpdateAction;

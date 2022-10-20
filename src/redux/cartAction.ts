@@ -13,3 +13,10 @@ export const deleteFromCart = (id: string) => {
     payload: id,
   };
 };
+
+export const updateCart = (id: string, quantity: number) => {
+  return {
+    type: ActionTypes.UPDATE_CART,
+    payload: { id, quantity },
+  };
+};
