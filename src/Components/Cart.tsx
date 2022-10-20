@@ -10,10 +10,17 @@ const Cart = () => {
     <div>
       {cart.map((item: any) => {
         return (
-          <div className="relative  flex m-4 bg-dark-ragin-beige rounded-xl">
+          <div
+            key={item.id}
+            className="relative  flex m-4 bg-dark-ragin-beige rounded-xl"
+          >
             <div className="flex justify-center w-1/4 m-4">
               <Link to={`/products/${item.id}`}>
-                <img src={item.imgURL} alt="Temp" className="h-64 w-48" />
+                <img
+                  src={item.imgURL}
+                  alt={item.title}
+                  className="h-64 w-48 hover:shadow-2xl ease-in duration-200 "
+                />
               </Link>
             </div>
             <div className="flex flex-col  w-1/2 m-auto">
