@@ -1,5 +1,5 @@
-import { ActionTypes } from "./ActionsTypes";
-import { Actions } from "./actions";
+import { ActionTypes } from "../ActionsTypes";
+import { Actions } from "../actions";
 const initialState = {
   cart: [],
   totalPrice: 0,

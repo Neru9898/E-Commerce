@@ -4,7 +4,7 @@ import { useDispatch } from "react-redux";
 import { deleteFromCart, updateCart } from "../redux/cartAction";
 const Cart = () => {
   const dispatch = useDispatch();
-  const { cart, totalPrice } = useSelector((state: any) => state);
+  const { cart, totalPrice } = useSelector((state: any) => state.cart);
   return (
     <div>
       {cart.map((item: any) => {
