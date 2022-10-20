@@ -5,26 +5,13 @@ import Home from "./Pages/Home";
 import Products from "./Pages/Products";
 import Item from "./Pages/Item";
 import Cart from "./Pages/Cart";
+import Navbar from "./Pages/Navbar";
 
 function App() {
   return (
     <div className="min-w-[950px] h-screen flex flex-col overflow-scroll bg-ragin-beige">
       <Router>
-        <div className="w-full h-24">
-          <div className="px-2 flex items-center w-full h-full bg-brightly-orange">
-            <div className="flex items-center">
-              <span className="header-btn">
-                <Link to="/">Home</Link>
-              </span>
-              <span className="header-btn">
-                <Link to="/products">Products</Link>
-              </span>
-              <span className="header-btn">
-                <Link to="/cart">Cart</Link>
-              </span>
-            </div>
-          </div>
-        </div>
+        <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/products" element={<Products />} />
