@@ -6,10 +6,6 @@
   * {
     @apply font-serif;
   }
-
-  /* span {
-    @apply py-2;
-  } */
 }
 
 @layer components {

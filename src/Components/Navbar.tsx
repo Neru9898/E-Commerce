@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 
+//The navbar where it lets the user to move between pages
 const Navbar = () => {
   return (
     <div className="w-full h-24 bg-dark-ragin-beige">

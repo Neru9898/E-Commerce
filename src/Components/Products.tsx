@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { bookData } from "../data/data";
+// Product page where books are displayed in a grid and lets user select what book to navigate to their respective page
 const Products = () => {
   return (
     <div className="p-12">

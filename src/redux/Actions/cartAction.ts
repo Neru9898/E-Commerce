@@ -1,5 +1,7 @@
 import { ActionTypes } from "./ActionsTypes";
 
+// Cart Actions (adding, removing and adjusting cart items)
+
 export const addToCart = (book: any, quantity: number) => {
   return {
     type: ActionTypes.ADD_TO_CART,

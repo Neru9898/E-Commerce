@@ -1,6 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
+import { Link } from "react-router-dom";
 import { deleteFromCart, updateCart } from "../redux/Actions/cartAction";
 const Cart = () => {
   const dispatch = useDispatch();
@@ -11,11 +12,13 @@ const Cart = () => {
         return (
           <div className="relative  flex m-4 bg-dark-ragin-beige rounded-xl">
             <div className="flex justify-center w-1/4 m-4">
-              <img src={item.imgURL} alt="Temp" className="h-64 w-48" />
+              <Link to={`/products/${item.id}`}>
+                <img src={item.imgURL} alt="Temp" className="h-64 w-48" />
+              </Link>
             </div>
             <div className="flex flex-col  w-1/2 m-auto">
               <span className="text-xl font-bold">Title: {item.title}</span>
-              <span className="p-2 text-md rounded-2xl w-full mt-full bg-[#D3D0C2]">
+              <span className="p-2 text-md rounded-2xl w-full mt-full bg-dark-beige">
                 Description: {item.description}
               </span>
             </div>

@@ -6,14 +6,17 @@ import { bookData } from "../data/data";
 import { addToCart } from "../redux/Actions/cartAction";
 import { isOpenModal } from "../redux/Actions/modalAction";
 import Modal from "./Modal";
+
+// This page is to display the individual books with their respective info where user can add specific amount to the cart
 const Item = () => {
+  // Variables and states (for modal and quantity)
   const params = useParams();
   const dispatch = useDispatch();
+
   const currentBook: any = bookData.find(
     (data: any) => data.id === params.bookID
   );
   const modalState = useSelector((state: any) => state.modal);
-
   const [quantity, setQutatity] = useState<number>(1);
 
   return (

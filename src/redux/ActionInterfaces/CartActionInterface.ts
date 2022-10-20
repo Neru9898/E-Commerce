@@ -1,5 +1,6 @@
 import { ActionTypes } from "../Actions/ActionsTypes";
 
+// Interfaces for cart actions
 interface AddAction {
   type: ActionTypes.ADD_TO_CART;
   payload: any;

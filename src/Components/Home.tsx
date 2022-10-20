@@ -1,5 +1,7 @@
 import { bookData } from "../data/data";
 import { Link } from "react-router-dom";
+
+//The home page with some info and link to one of the books
 const Home = () => {
   return (
     <div className="flex flex-col items-center m-4 text-center">
@@ -8,7 +10,7 @@ const Home = () => {
         On this site we have multiple books that can be purchase and sent to you
         in a click of a button
       </p>
-      <h2 className="text-2xl py-4 ">
+      <h2 className="text-2xl py-4">
         Our best seller{" "}
         <span className="font-bold">IT STARTS WITH US: A NOVEL</span> written by
         Colleen Hoover is now avaliable

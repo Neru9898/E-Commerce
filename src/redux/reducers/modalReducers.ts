@@ -1,6 +1,8 @@
 import { ActionTypes } from "../Actions/ActionsTypes";
 import { ActionsInterface } from "../ActionInterfaces";
 
+// Reducers for the modal to handle modal state
+
 const initialState = false;
 
 const modalReducer = (state: any = initialState, action: ActionsInterface) => {

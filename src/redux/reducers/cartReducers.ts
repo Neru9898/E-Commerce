@@ -1,6 +1,8 @@
 import { ActionTypes } from "../Actions/ActionsTypes";
 import { ActionsInterface } from "../ActionInterfaces";
 
+// Reducers for the cart to handle cart state
+
 const initialState = {
   cart: [],
   totalPrice: 0,
@@ -8,6 +10,7 @@ const initialState = {
 
 export const getBookIndex = (array: any[], id: string) =>
   array.findIndex((currentCart: any) => currentCart.id === id);
+
 const cartReducer = (state: any = initialState, action: ActionsInterface) => {
   switch (action.type) {
     case ActionTypes.ADD_TO_CART:

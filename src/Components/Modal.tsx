@@ -1,6 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import { isOpenModal } from "../redux/Actions/modalAction";
 
+//This is the modal to inform user that books were added to the cart
 const Modal = () => {
   const dispatch = useDispatch();
   const modalState = useSelector((state: any) => state.modal);
