@@ -16,7 +16,11 @@ const Home = () => {
         Colleen Hoover is now avaliable
       </h2>
       <Link to={`/products/1`}>
-        <img src={bookData[0].imgURL} alt="Temp" className="max-w-sm py-4" />
+        <img
+          src={bookData[0].imgURL}
+          alt={bookData[0].title}
+          className="max-w-sm py-4 hover:shadow-2xl ease-in duration-200"
+        />
       </Link>
       <figcaption className="mt-2 text-sm">By {bookData[0].author}</figcaption>
     </div>
